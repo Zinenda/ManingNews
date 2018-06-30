@@ -1,0 +1,35 @@
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l4">
+                <h5>Localização</h5>
+                {% for item in site.location %}
+                    <p class="justified">
+                        {{ item.content }}
+                    </p>
+                {% endfor %}
+
+            </div>
+
+            <div class="col s12 l4">
+                <h5>Contactos</h5>
+                Cel: <a href="tel:+258 84 380 8268" class="white-text" title="Celular">+258 84 380 8268</a> <br>
+                Email: <a href="mailto:{{ site.email }}" class="white-text" title="Email">{{ site.email }}</a>
+            </div>
+
+            <div class="col s12 l4">
+                <h5>Citação</h5>   
+                <em>
+                    O essencial, com efeito, na educação, não é a doutrina ensinada, é o despertar.
+                    <br>
+                    - Ernest Renan
+                </em>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center">
+            &copy; {{ site.time | date: "%Y" }} Todos Direitos Reservados | {{ site.title }} - {{ site.description }} | Powered by IZItag
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<style>
+    .page-header {
+        position: relative;
+        background-image: url({{ page.image }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        text-shadow: -2px 2px #333;
+    }
+</style>
+
+<header class="page-header">
+    <div class="page-title">
+        {% if page.layout == "page" %}
+            <a href="{{ page.url }}">
+                <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
+            </a>
+        {% endif %}
+        <h1>{{ page.ref }}</h1>
+        
+        {% if page.layout == "page" %}
+            <a href="#formReg" title="Inscrições" class="btn-large waves-effect waves-light modal-trigger">Inscreva-se <i class="fas fa-edit"></i></a>
+        {% endif %}
+        <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos <i class="fas fa-envelope-open"></i></a>
+        
+    </div>
+</header>
+
+
+<section class="section grey lighten-4">
+    {{ content }}
+</section>
+
+{% include footer.html %}

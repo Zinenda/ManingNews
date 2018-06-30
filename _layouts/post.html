@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<header class="post-header">
+    <div class="post-title">
+        <h3 class="bold">{{ page.title }}</h3>
+    </div>
+</header>
+
+<section class="section grey lighten-4">
+    <section class="container white grey-text text-darken-4">
+        <article class="justify">
+            {{ content }}
+        </article>
+    </section>
+</section>
+
+<style>
+    .post-header {
+        position: relative;
+        background-image: url({{ page.image }});
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .post-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(0, 186, 252, .5);
+        color: #fff;
+    } 
+</style>

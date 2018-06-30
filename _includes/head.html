@@ -1,0 +1,12 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#fff112">
+    
+    {% seo %}
+
+    <link rel="shortcut icon" href="{% if page.title == "Liceu Ebenezer" %}/assets/img/liceu_logo.svg {% elsif page.title == "IMEPE" %}/assets/img/imepe_logo.svg{% endif %}" type="image/x-icon">
+
+    {% include scssify.html %}
+</head>

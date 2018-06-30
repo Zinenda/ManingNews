@@ -1,0 +1,47 @@
+.wrapper {
+    background: {
+        image: url(/assets/img/cover.jpg);
+        size: cover;
+        attachment: fixed;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    width: 100%;
+    height: 100vh;
+}
+
+.halfway-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.inline-list {
+    display: inline-flex;
+}
+
+.primary-color {
+    background: $primary-color;
+}
+
+.primary-color-text {
+    color: $primary-color-dark;
+}
+
+.primary-color-light {
+    background: $primary-color-light;
+}
+
+.primary-color-dark {
+    background: $primary-color-dark;
+}
+
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba($color: $primary-color, $alpha: .65)
+}

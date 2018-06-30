@@ -1,0 +1,27 @@
+<ul class="inline-list">
+    {% for item in site.data.contacts limit: 3 %}
+        <li>
+            <a
+                href="{{ item.link }}"
+                class="btn-floating waves-effect waves-light toolttiped"
+                data-position="bottom"
+                data-delay="50"
+                data-tooltip="{{ item.title }}">
+                <i class="fab fa-{{ item.icon }}"></i>
+            </a>
+        </li>
+    {% endfor %}
+
+    {% for item in site.data.contacts offset: 3 %}
+        <li>
+            <a
+                href="{{ item.link }}"
+                class="btn-floating waves-effect waves-light toolttiped"
+                data-position="bottom"
+                data-delay="50"
+                data-tooltip="{{ item.title }}">
+                <i class="fas fa-{{ item.icon }}"></i>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

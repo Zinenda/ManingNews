@@ -1,0 +1,27 @@
+- link: /
+  title: Página Inicial
+  icon: home
+
+- link: /noticias/
+  title: Noticias Gerais
+  icon: newspaper
+
+- link: /noticias/
+  title: Noticias Gerais
+  icon: newspaper
+
+- link: /criminalidade/
+  title: Criminalidade
+  icon: user-secret
+
+- link: /desportos/
+  title: Desportos
+  icon: futbol
+
+- link: /tecnologias/
+  title: Tecnologias
+  icon: desktop
+
+- link: /biffs/
+  title: Biffs
+  icon: comment-alt

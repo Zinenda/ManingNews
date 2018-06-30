@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+  branch: master
+
+media_folder: "assets/img/uploads"
+  
+collections:
+
+  - label: "Noticias"
+    name: "posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Upload Video", name: "video_upload", widget: "bloolean", default: false}
+      - {label: "Video", name: "video", widget: "file", required: false}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Área de Texto", name: "body", widget: "markdown"}

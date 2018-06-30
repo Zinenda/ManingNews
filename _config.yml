@@ -1,0 +1,36 @@
+title: ManingNews
+description: 
+url: https://maning.news
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-email-protect
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+pagination:
+  enabled: true
+  per_page: 9
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - bower_components

@@ -1,0 +1,7 @@
+{% for item in site.data.nav %}
+    <li {% if item.url == item.link %}class="active"{% endif %}>
+        <a href="{{ item.link }}" title="{{ item.title }}" class="waves-effect waves-primary">
+            <i class="fas fa-fw fa-{{ item.icon }}"></i> {{ item.title }}
+        </a>
+    </li>
+{% endfor %}

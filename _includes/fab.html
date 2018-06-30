@@ -1,0 +1,67 @@
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large waves-effect waves-circle waves-light red">
+        <i class="fas fa-plus"></i>
+    </a>
+
+    <ul>
+        {% unless page.title == "Ebenezer" %}
+            <li>
+                <a href="/" class="btn-floating btn-large waves-effect waves-circle waves-light red">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+
+            {% unless page.ref == "Liceu Ebenzer" %}
+                <li>
+                    <a 
+                        href="/liceu/"
+                        class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                        data-position="left"
+                        data-delay="50"
+                        data-tooltip="Liceu Ebenezer">
+                        <i class="fas fa-school"></i>
+                    </a>
+                </li>
+            {% endunless %}
+
+            {% unless page.ref == "IMEPE" %}
+                <li>
+                    <a 
+                        href="/imepe/"
+                        class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                        data-position="left"
+                        data-delay="50"
+                        data-tooltip="IMEPE">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </li>
+            {% endunless %}
+        {% endunless %}
+        
+        {% unless page.ref == "Noticias" %}
+            <li>
+                <a 
+                    href="/noticias/"
+                    class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                    data-position="left"
+                    data-delay="50"
+                    data-tooltip="Noticias">
+                    <i class="fas fa-newspaper"></i>
+                </a>
+            </li>
+        {% endunless %}
+
+        {% unless page.ref == "Galeria" %}
+            <li>
+                <a 
+                    href="/galeria/"
+                    class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                    data-position="left"
+                    data-delay="50"
+                    data-tooltip="Galeria">
+                    <i class="fas fa-image"></i>
+                </a>
+            </li>
+        {% endunless %}
+    </ul>
+</div>
