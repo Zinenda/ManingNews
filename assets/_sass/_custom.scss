@@ -1,14 +1,7 @@
-.wrapper {
-    background: {
-        image: url(/assets/img/cover.jpg);
-        size: cover;
-        attachment: fixed;
-        repeat: no-repeat;
-        position: center;
-    }
-
-    width: 100%;
-    height: 100vh;
+flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .halfway-img {
