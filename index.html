@@ -1,27 +1,6 @@
 ---
-layout: default
+layout: page
+pagination:
+    enabled: true
+    collection: posts
 ---
-
-<section class="container">
-    <section class="row">
-        {% for item in site.main reversed limit: 2 %}
-            <div class="center col s12 l6">
-                <div class="card large hoverable">
-                    <div class="card-image">
-                        <a href="{{ item.link }}">
-                            <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
-                        </a>
-                    </div>
-
-                    <div class="card-content" style="background-color: {{ item.color }}; height: 20vh;">
-                        <h4>{{ item.title }}</h4>
-                    </div>
-
-                    <div class="card-action">
-                        <a href="{{ item.link }}" title="{{ item.title }}" class="btn waves-effect waves-light">Saiba Mais</a>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </section>
-</section>
