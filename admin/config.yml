@@ -19,5 +19,13 @@ collections:
       - {label: "Video", name: "video", widget: "file", required: false}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Data", name: "date", widget: "datetime"}
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options: ["noticias", "criminalidade", "desporto", "tecnologias", "biffs"]
+      - label: "Tag"
+        name: "tag"
+        widget: "select"
+        options: ["moçambique", "mundo", "uefa"]
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Área de Texto", name: "body", widget: "markdown"}
