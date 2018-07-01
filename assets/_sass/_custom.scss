@@ -36,5 +36,21 @@ img {
 }
 
 .waves-effect.waves-primary .waves-ripple {
-    background-color: rgba($color: $primary-color, $alpha: .65)
+    background-color: rgba($color: $primary-color, $alpha: .65);
+}
+
+.page-header {
+    position: relative;
+    height: 50vh;
+
+    img {
+        width: 100%;
+    }
+
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
