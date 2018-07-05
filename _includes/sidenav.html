@@ -1,5 +1,7 @@
 <aside id="sideNav" class="sidenav sidenav-fixed">
-    <img src="/assets/img/logos/logobg.svg" alt="{{ site.title }}">
+    <a href="/" title="{{ site.title }}">
+        <img src="/assets/img/logos/logobg.svg" alt="{{ site.title }}">
+    </a>
     <div class="card hoverable">
         {% include duckduckgo.html %}
     </div>
@@ -8,4 +10,8 @@
     <ul>
         {% include nav.html %}
     </ul>
+    <hr class="divider">
+    <div class="container">
+        &copy; {{ site.time | date: "%Y" }} Todos Direitos Reservados por <a href="https://izitag.github.io" rel="author" target="_blank">IZItag</a>
+    </div>
 </aside>

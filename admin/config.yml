@@ -26,6 +26,6 @@ collections:
       - label: "Tag"
         name: "tag"
         widget: "select"
-        options: ["moçambique", "mundo", "uefa"]
+        options: ["mozambique", "mundo", "uefa"]
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
-      - {label: "Área de Texto", name: "body", widget: "markdown"}
+      - {label: "Area de Texto", name: "body", widget: "markdown"}
