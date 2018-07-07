@@ -1,13 +1,11 @@
-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+header, main, footer {
+    padding-left: 300px;
 }
 
-.halfway-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
 }
 
 img {
