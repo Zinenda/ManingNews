@@ -1,0 +1,13 @@
+<div class="center">
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="btn-large btn-floating waves-effect waves-circle waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Artigo Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+    {% endif %}
+                
+    {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="btn-large btn-floating waves-effect waves-circle waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Próximo Artigo">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    {% endif %}
+</div>

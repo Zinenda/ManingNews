@@ -1,0 +1,27 @@
+<style>
+    .post-header {
+        position: relative;
+        background-image: url({{ page.image }});
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .post-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(24, 24, 36, .5);
+        color: #fff;
+    } 
+</style>
+
+<header class="post-header">
+    <div class="post-title">
+        <h3 class="bold">{{ page.title }}</h3>
+    </div>
+</header>

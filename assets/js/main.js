@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.slider').slider();
+    $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
 
     var $container = $('#masonry-grid');

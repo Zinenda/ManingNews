@@ -2,38 +2,18 @@
 layout: default
 ---
 
-<header class="post-header">
-    <div class="post-title">
-        <h3 class="bold">{{ page.title }}</h3>
-    </div>
-</header>
+{% include posts_layout/header.html %}
 
-<section class="section grey lighten-4">
-    <section class="container white grey-text text-darken-4">
-        <article class="justify">
+<section class="section row">
+    <article class="col s12 l8 white grey-text text-darken-4">
+        <div class="container justify">
             {{ content }}
-        </article>
-    </section>
+
+            {% include posts_layout/pagination.html %}
+        </div>
+    </article>
+
+    <div class="hide-on-small-only col l4">
+        {% include posts_layout/related_posts.html %}
+    </div>
 </section>
-
-<style>
-    .post-header {
-        position: relative;
-        background-image: url({{ page.image }});
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 50vh;
-    }
-
-    .post-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        background-color: rgba(0, 186, 252, .5);
-        color: #fff;
-    } 
-</style>
