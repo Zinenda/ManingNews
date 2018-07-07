@@ -6,10 +6,6 @@
   title: Noticias Gerais
   icon: newspaper
 
-- link: /noticias/
-  title: Noticias Gerais
-  icon: newspaper
-
 - link: /criminalidade/
   title: Criminalidade
   icon: user-secret

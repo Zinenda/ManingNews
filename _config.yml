@@ -6,6 +6,7 @@ image: /assets/img/logos/logotype.svg
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
