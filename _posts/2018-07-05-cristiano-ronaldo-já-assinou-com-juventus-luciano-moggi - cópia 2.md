@@ -5,6 +5,7 @@ video_upload: false
 image: >-
   /assets/img/uploads/20180625t195006z431677902rc12bf1cf5a0rtrmadp3soccerworldcupirnpor-c735c301ece193c660348d89e3f6ab55-1200x600.jpg
 date: '2018-07-05T17:05:11+02:00'
+author: "Ivo Zinenda"
 category: desporto
 tag: mundo
 layout: post

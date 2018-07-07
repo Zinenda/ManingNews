@@ -20,6 +20,7 @@ collections:
       - {label: "Video", name: "video", widget: "file", required: false}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Autor", name: "author", widget: "string"}
       - label: "Categoria"
         name: "category"
         widget: "select"
